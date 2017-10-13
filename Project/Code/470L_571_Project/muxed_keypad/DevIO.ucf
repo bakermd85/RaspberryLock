@@ -1,0 +1,55 @@
+#
+# UCF file for FPGA P6 via right angle conn to DevIO P1
+#
+# (note: P6/P1 odd/even pin numbers swapped using right angle connectors)
+
+# Clock signal 
+NET "clock" LOC = P123;
+
+# IO_BANK0 N0 - N6
+NET "row<0>" LOC = P142; #P7
+NET "row<1>" LOC = P141; #N7
+NET "row<2>" LOC = P140; #P6
+NET "row<3>" LOC = P139; #N6
+NET "col<0>" LOC = P138; #P5
+NET "col<1>" LOC = P137; #N5
+NET "col<2>" LOC = P121; #P1
+
+# 7 segment display drive: Active Low 0=ON 1=OFF
+NET "sseg<0>" LOC = P102;
+NET "sseg<1>" LOC = P105;
+NET "sseg<2>" LOC = P101;
+NET "sseg<3>" LOC = P97;
+NET "sseg<4>" LOC = P98;
+NET "sseg<5>" LOC = P100;
+NET "sseg<6>" LOC = P104;
+NET "sseg<7>" LOC = P99;
+
+# IO Board Seven Segment Display Colon
+NET "ssegcolon" LOC = P87;
+
+# IO Board Seven Segment Digits
+NET "ssegd<0>" LOC = P92;
+NET "ssegd<1>" LOC = P93;
+NET "ssegd<2>" LOC = P84;
+NET "ssegd<3>" LOC = P88;
+NET "ssegcolon" IOSTANDARD = LVCMOS33;
+NET "ssegd<0>" IOSTANDARD = LVCMOS33;
+NET "ssegd<1>" IOSTANDARD = LVCMOS33;
+NET "ssegd<2>" IOSTANDARD = LVCMOS33;
+NET "ssegd<3>" IOSTANDARD = LVCMOS33;
+NET "sseg<0>" IOSTANDARD = LVCMOS33;
+NET "sseg<1>" IOSTANDARD = LVCMOS33;
+NET "sseg<2>" IOSTANDARD = LVCMOS33;
+NET "sseg<3>" IOSTANDARD = LVCMOS33;
+NET "sseg<4>" IOSTANDARD = LVCMOS33;
+NET "sseg<5>" IOSTANDARD = LVCMOS33;
+NET "sseg<6>" IOSTANDARD = LVCMOS33;
+NET "sseg<7>" IOSTANDARD = LVCMOS33;
+NET "row<0>" IOSTANDARD = LVCMOS33;
+NET "row<1>" IOSTANDARD = LVCMOS33;
+NET "row<2>" IOSTANDARD = LVCMOS33;
+NET "row<3>" IOSTANDARD = LVCMOS33;
+NET "col<0>" IOSTANDARD = LVCMOS33;
+NET "col<1>" IOSTANDARD = LVCMOS33;
+NET "col<2>" IOSTANDARD = LVCMOS33;

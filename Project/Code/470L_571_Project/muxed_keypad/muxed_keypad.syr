@@ -1,0 +1,437 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: muxed_keypad.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "muxed_keypad.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "muxed_keypad"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : muxed_keypad
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\mbaker\Desktop\470L_571_Project\muxed_keypad\muxed_keypad.v" into library work
+Parsing module <muxed_keypad>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <muxed_keypad>.
+WARNING:HDLCompiler:413 - "C:\Users\mbaker\Desktop\470L_571_Project\muxed_keypad\muxed_keypad.v" Line 45: Result of 15-bit expression is truncated to fit in 14-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <muxed_keypad>.
+    Related source file is "C:\Users\mbaker\Desktop\470L_571_Project\muxed_keypad\muxed_keypad.v".
+WARNING:Xst:2935 - Signal 'ssegd', unconnected in block 'muxed_keypad', is tied to its initial value (1001).
+WARNING:Xst:2935 - Signal 'ssegcolon', unconnected in block 'muxed_keypad', is tied to its initial value (1).
+    Found 4-bit register for signal <row>.
+    Found 4-bit register for signal <number>.
+    Found 8-bit register for signal <sseg>.
+    Found 14-bit register for signal <counter>.
+    Found finite state machine <FSM_0> for signal <row>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Power Up State     | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <counter[13]_GND_1_o_add_2_OUT> created at line 45.
+    Found 16x8-bit Read Only RAM for signal <number[3]_PWR_1_o_wide_mux_42_OUT>
+    Found 14-bit comparator greater for signal <counter[13]_GND_1_o_LessThan_2_o> created at line 45
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <muxed_keypad> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 14-bit adder                                          : 1
+# Registers                                            : 3
+ 14-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 14-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 4-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <muxed_keypad>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram_number[3]_PWR_1_o_wide_mux_42_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <number>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <muxed_keypad> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 1
+ 14-bit up counter                                     : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Comparators                                          : 1
+ 14-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 4-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <row[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0100  | 11
+ 1000  | 10
+-------------------
+WARNING:Xst:1293 - FF/Latch <sseg_7> has a constant value of 1 in block <muxed_keypad>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <muxed_keypad> ...
+WARNING:Xst:1293 - FF/Latch <counter_13> has a constant value of 0 in block <muxed_keypad>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block muxed_keypad, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : muxed_keypad.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 73
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 12
+#      LUT2                        : 4
+#      LUT3                        : 2
+#      LUT4                        : 7
+#      LUT6                        : 20
+#      MUXCY                       : 12
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 26
+#      FD                          : 26
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 3
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              26  out of  11440     0%  
+ Number of Slice LUTs:                   46  out of   5720     0%  
+    Number used as Logic:                46  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     46
+   Number with an unused Flip Flop:      20  out of     46    43%  
+   Number with an unused LUT:             0  out of     46     0%  
+   Number of fully used LUT-FF pairs:    26  out of     46    56%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    102    20%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.547ns (Maximum Frequency: 281.928MHz)
+   Minimum input arrival time before clock: 2.915ns
+   Maximum output required time after clock: 5.515ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 3.547ns (frequency: 281.928MHz)
+  Total number of paths / destination ports: 287 / 26
+-------------------------------------------------------------------------
+Delay:               3.547ns (Levels of Logic = 2)
+  Source:            counter_9 (FF)
+  Destination:       counter_11 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: counter_9 to counter_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.181  counter_9 (counter_9)
+     LUT6:I0->O           15   0.254   1.263  counter[13]_GND_1_o_LessThan_2_o11 (counter[13]_GND_1_o_LessThan_2_o1)
+     LUT6:I4->O            1   0.250   0.000  counter_11_rstpot (counter_11_rstpot)
+     FD:D                      0.074          counter_11
+    ----------------------------------------
+    Total                      3.547ns (1.103ns logic, 2.444ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              2.915ns (Levels of Logic = 2)
+  Source:            col<0> (PAD)
+  Destination:       number_1 (FF)
+  Destination Clock: clock rising
+
+  Data Path: col<0> to number_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   1.259  col_0_IBUF (col_0_IBUF)
+     LUT6:I0->O            1   0.254   0.000  row[3]_number[3]_select_39_OUT<1>1 (row[3]_number[3]_select_39_OUT<1>)
+     FD:D                      0.074          number_1
+    ----------------------------------------
+    Total                      2.915ns (1.656ns logic, 1.259ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 15 / 11
+-------------------------------------------------------------------------
+Offset:              5.515ns (Levels of Logic = 2)
+  Source:            row_FSM_FFd1 (FF)
+  Destination:       row<3> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: row_FSM_FFd1 to row<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.525   1.147  row_FSM_FFd1 (row_FSM_FFd1)
+     LUT2:I0->O            1   0.250   0.681  row<3>1 (row_3_OBUF)
+     OBUF:I->O                 2.912          row_3_OBUF (row<3>)
+    ----------------------------------------
+    Total                      5.515ns (3.687ns logic, 1.828ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    3.547|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.04 secs
+ 
+--> 
+
+Total memory usage is 249104 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

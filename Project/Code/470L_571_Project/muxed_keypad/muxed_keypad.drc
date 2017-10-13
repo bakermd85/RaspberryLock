@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Oct 10 08:44:12 2017
+
+drc -z muxed_keypad.ncd muxed_keypad.pcf
+
+DRC detected 0 errors and 0 warnings.

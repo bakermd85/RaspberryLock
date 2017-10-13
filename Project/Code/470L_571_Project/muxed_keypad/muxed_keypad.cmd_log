@@ -1,0 +1,95 @@
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 
+xst -intstyle ise -ifn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.xst" -ofn "C:/Users/mbaker/Desktop/470L_571_Project/muxed_keypad/muxed_keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DevIO.ucf -p xc6slx9-tqg144-2 muxed_keypad.ngc muxed_keypad.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o muxed_keypad_map.ncd muxed_keypad.ngd muxed_keypad.pcf 
+par -w -intstyle ise -ol high -mt off muxed_keypad_map.ncd muxed_keypad.ncd muxed_keypad.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml muxed_keypad.twx muxed_keypad.ncd -o muxed_keypad.twr muxed_keypad.pcf -ucf DevIO.ucf 
+bitgen -intstyle ise -f muxed_keypad.ut muxed_keypad.ncd 

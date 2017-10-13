@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\mbaker\Desktop\470L_571_Project\muxed_keypad\muxed_keypad.ncd
+OUTFILE=C:\Users\mbaker\Desktop\470L_571_Project\muxed_keypad\muxed_keypad.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\mbaker\Desktop\470L_571_Project\muxed_keypad
+LICENSE=WebPack
+USER_INFO=211230827_0_0_439
